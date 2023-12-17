@@ -1,0 +1,11 @@
+[
+    {"id": 1, "case_number": "Case 1", "case_type": "CIVIL", "judge_name": "Modi", "lawyer_name": "dhoni", "client_name": "Khadeer", "status":"CLOSED"},
+    {"id": 2, "case_number": "Case 2", "case_type": "CRIMINAL", "judge_name": "Elon Musk", "lawyer_name": "kohli", "client_name": "Venky", "status":"PENDING"},
+    {"id": 3, "case_number": "Case 3", "case_type": "CIVIL", "judge_name": "Modi", "lawyer_name": "virat", "client_name": "Sameer", "status":"PENDING"},
+    {"id": 4, "case_number": "Case 4", "case_type": "CRIMINAL", "judge_name": "Elon Musk", "lawyer_name": "kohli", "client_name": "Pranay",  "status":"CLOSED"},
+    {"id": 5, "case_number": "Case 5", "case_type": "CIVIL", "judge_name": "Modi", "lawyer_name": "virat", "client_name": "Sriram", "status":"PENDING"},
+    {"id": 6, "case_number": "Case 6", "case_type": "CRIMINAL", "judge_name": "Elon Musk", "lawyer_name": "kohli", "client_name": "Fouzi",  "status":"PENDING"},
+    {"id": 7, "case_number": "Case 7", "case_type": "CRIMINAL", "judge_name": "Elon Musk", "lawyer_name": "kohli", "client_name": "Khadeer",  "status":"CLOSED"},
+    {"id": 8, "case_number": "Case 8", "case_type": "CIVIL", "judge_name": "Modi", "lawyer_name": "virat", "client_name": "Khadeer", "status":"PENDING"},
+    {"id": 9, "case_number": "Case 9", "case_type": "CRIMINAL", "judge_name": "Elon Musk", "lawyer_name": "kohli", "client_name": "Khadeer",  "status":"PENDING"}
+]

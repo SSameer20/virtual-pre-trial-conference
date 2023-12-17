@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Data Search</title>
+</head>
+<body>
+    <h1>Search JSON Data</h1>
+    <form id="search-form">
+        <label for="search-param">Select Search Parameter:</label>
+        <select id="search-param" name="search_param">
+            <option value="caseId">Case ID</option>
+            <option value="caseTitle">Case Title</option>
+        </select>
+        <br>
+        <label for="search-query">Enter Search Query:</label>
+        <input type="text" id="search-query" name="search_query">
+    </form>
+    <div id="results"></div>
+
+    <script>
+        // Attach an event listener to the search input field
+        const searchInput = document.getElementById('search-query');
+        searchInput.addEventListener('input', search);
+
+        function search() {
+            const form = document.getElementById('search-form');
+            const formData = new FormData(form);
+
+            fetch('/search', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                const resultsDiv = document.getElementById('results');
+                resultsDiv.innerHTML = '';
+
+                if (data.length === 0) {
+                    resultsDiv.innerHTML = 'No results found.';
+                } else {
+                    data.forEach(caseData => {
+                        const resultItem = document.createElement('div');
+                        resultItem.textContent = Case ID: ${caseData.caseId}, Case Title: ${caseData.caseTitle};
+                        resultsDiv.appendChild(resultItem);
+                    });
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>

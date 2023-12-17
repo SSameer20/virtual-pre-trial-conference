@@ -1,0 +1,12 @@
+[
+    {"id":1, "Lawyer_name":"Shankar", "Phone_number":"9685769584", "Speciality":"Civil","Charge":"50000", "Rating": 3,"Location":"Hyderabad","Experience(in years)":2},
+    {"id":2, "Lawyer_name":"Naveen", "Phone_number":"6859468327", "Speciality":"Civil","Charge":"100000", "Rating": 4,"Location":"Kolkata","Experience(in years)":5},
+    {"id":3, "Lawyer_name":"Shiva", "Phone_number":"4956832535", "Speciality":"Criminal","Charge":"75000", "Rating": 4,"Location":"mumbai","Experience(in years)":3},
+    {"id":4, "Lawyer_name":"Vijay", "Phone_number":"4968532659", "Speciality":"Civil","Charge":"120000", "Rating": 4,"Location":"Hyderabad","Experience(in years)":3},
+    {"id":5, "Lawyer_name":"Ajay Kumar", "Phone_number":"4968536595", "Speciality":"Criminal","Charge":"65000", "Rating": 4,"Location":"Delhi","Experience(in years)":4},
+    {"id":6, "Lawyer_name":"Nagaraju", "Phone_number":"9658326594", "Speciality":"Criminal","Charge":"60000", "Rating": 3,"Location":"Kanpur","Experience(in years)":3},
+    {"id":7, "Lawyer_name":"Prashanth", "Phone_number":"7566985695", "Speciality":"Criminal","Charge":"70000", "Rating": 3,"Location":"Banglore","Experience(in years)":3},
+    {"id":8, "Lawyer_name":"Nikhil Reddy", "Phone_number":"8965846253", "Speciality":"Civil","Charge":"75000", "Rating": 4,"Location":"Delhi","Experience(in years)":4},
+    {"id":9, "Lawyer_name":"Praveen", "Phone_number":"4695832569", "Speciality":"Civil","Charge":"90000", "Rating": 4,"Location":"mumbai","Experience(in years)":5},
+    {"id":10, "Lawyer_name":"Pavan Kumar", "Phone_number":"7596832145", "Speciality":"Criminal","Charge":"60000", "Rating": 3,"Location":"Delhi","Experience(in years)":2}
+]

@@ -1,0 +1,23 @@
+{% extends 'interface.html' %}
+{% block title %}Client Interface{% endblock %}
+{% block content %}
+<form method="post">
+    
+    <label for="username">Username</label>
+    <input type="text" name="user" value="{{username}}">
+    <br>
+    <label for="case_details">Case Details</label>
+    <br>
+    <textarea name="case_details" cols="100" rows="5"></textarea>
+    <br>
+    <label for="Lawyer" name="lawyer">Lawyer: </label>
+        
+        <select>
+            {% for column in lawyers %}
+            <option val="{{column['id']}}">{{ column['Lawyer_name'] }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <input type="submit">
+  </form>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'interface.html' %}
+{% block title %}Client Interface{% endblock %}
+{% block content %}
+
+<div class="main">
+    {% for column in cases%}
+    {% if column['client_name']==username %}
+    <div class="main-card" style="border: 2px solid black; border-radius: 10px; margin: 10px 5px; padding: 10px;">
+        <b><p>Case Number: </b>{{ column['case_number']}}</p>
+        <p><b>Judge:</b> {{ column['judge_name']}}</p>
+        <p><b>Lawyer:</b> {{ column['lawyer_name']}}</p>
+        <p><b>Client:</b> {{ column['client_name']}}</p>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+
+{% endblock %}

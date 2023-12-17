@@ -1,0 +1,34 @@
+{% extends 'interface.html' %}
+{% block title %}Client Interface{% endblock %}
+{% block content %}
+
+<div class="d-outer-card">
+    <div class="inner-card">
+        <div class="inner-inner-card">
+            <h2>Recent Case</h2>
+            <b><p>Case Number: </b>{{ cases[0]['case_number']}}</p>
+        <p><b>Lawyer:</b> {{ cases[0]['lawyer_name']}}</p>
+        <p><b>Judge:</b> {{ cases[0]['judge_name']}}</p>
+        </div>
+        <div class="inner-inner-card">
+            <h2>Upcoming Meetings</h2>
+        </div>
+    </div>
+    <div class="inner-card">
+        <div class="inner-inner-card" id="d_cases_list">
+            
+        <h1>Cases List</h1>
+        {% for column in cases%}
+    {% if column['client_name']==username %}
+    <div class="main-card" style="border: 2px solid black; border-radius: 10px; margin: 10px 5px; padding: 10px;">
+        <b><p>Case Number: </b>{{ column['case_number']}}</p>
+        <p><b>Lawyer:</b> {{ column['lawyer_name']}}</p>
+    </div>
+    {% endif %}
+    {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

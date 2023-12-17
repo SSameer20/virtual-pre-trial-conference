@@ -1,0 +1,118 @@
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #11101D;
+    color: rgb(17, 16, 16);
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  *{
+      padding: 0;
+      margin: 0;
+  }
+  .nav{
+    
+      background-color: #11101D;
+      text-align: center;
+      height: 2cm;
+      padding: 10px;
+      padding-top: 25px;
+  
+  }
+  .profile{
+      
+      width: 3cm;
+      height:3cm;
+      border-radius: 50%;
+      border:solid 1px black;
+      margin: auto;
+  }
+  
+  .image_container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+  }
+  h1{
+      text-align: center;
+  }
+  
+
+.main{
+    display: flex;
+    flex-direction: row;
+    
+    height: 100vh;
+    width: -webkit-fill-available;
+}
+.main-card{
+    width: 40vw;
+    border: 2px solid black;
+    height: 100vh;
+    margin: 10px
+}
+
+.inner-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: max-content;
+}
+
+#lawyer_dash_card{
+    display: flex;
+    flex-direction: column;
+}
+
+#lawyer_dash_card >div{
+    height: 50%;
+    border: 1px solid black;
+}
